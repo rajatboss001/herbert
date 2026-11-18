@@ -5,7 +5,13 @@ import hero_img_2 from "../../assets/images/png/hero_img_2.png"
 const Homepage = () => {
   return (
     <section>
-      <Navbar />
+
+
+      <Navbar class name {
+        constructor(parameters) {
+          
+        }
+      } />
       <div>
         <div className="hero-container max-w-332.25 px-5 mx-auto pt-13.75">
             <div className="hero-row flex mr-5.25">
