@@ -1,4 +1,6 @@
 
+import { useState } from "react";
+
 const Faq = () => {
   const faqs = [
     {
@@ -9,97 +11,117 @@ const Faq = () => {
     {
       question: "How accurate is the information provided by Herbert?",
       answer:
-        "Herbert provides guidance based on available information. Always verify important requirements with official German government sources.",
+        "Herbert is an AI-powered assistant designed to help with German visa and immigration processes. It provides guidance, answers questions, and helps you navigate the requirements and procedures involved.",
     },
     {
       question: "How can I access Herbert?",
       answer:
-        "You can access Herbert through our platform and use its assistance to explore German visa and immigration information.",
+        "Herbert is an AI-powered assistant designed to help with German visa and immigration processes. It provides guidance, answers questions, and helps you navigate the requirements and procedures involved.",
     },
     {
       question: "How can Herbert help me with my visa application?",
       answer:
-        "Herbert can help you understand visa requirements, prepare for the application process, and find relevant information about required documents.",
+        "Herbert is an AI-powered assistant designed to help with German visa and immigration processes. It provides guidance, answers questions, and helps you navigate the requirements and procedures involved.",
     },
     {
       question: "Is Herbert available in multiple languages?",
       answer:
-        "Herbert is designed to make visa and immigration guidance easier to understand. Language availability depends on the supported platform options.",
+        "Herbert is an AI-powered assistant designed to help with German visa and immigration processes. It provides guidance, answers questions, and helps you navigate the requirements and procedures involved.",
     },
     {
       question: "Can Herbert help me fill out my visa application forms?",
       answer:
-        "Herbert can guide you through the information required in your visa application forms and help you understand the different sections.",
+        "Herbert is an AI-powered assistant designed to help with German visa and immigration processes. It provides guidance, answers questions, and helps you navigate the requirements and procedures involved.",
     },
   ];
 
+  const [openFaq, setOpenFaq] = useState(0);
+
+  const toggleFaq = (index) => {
+    setOpenFaq((prev) => (prev === index ? null : index));
+  };
+
   return (
-    <>
-      <section className="">
-        <div className="mx-auto px-5 w-full max-w-295">
-          <div className="flex items-center justify-center w-full flex-col gap-16">
-            <div className="">
-              <h2 className="mb-4 font-semibold text-5xl text-rich-black leading-119">
-                Frequently Asked{" "}
-                <span className="text-orange-red">Questions</span>
-              </h2>
+    <section className="py-16">
+      <div className="mx-auto px-5 w-full max-w-295">
+        <div className="flex items-center justify-center w-full flex-col gap-16">
+          <div className="text-center">
+            <h2 className="mb-4 font-semibold text-5xl text-rich-black leading-119">
+              Frequently Asked{" "}
+              <span className="text-orange-red">Questions</span>
+            </h2>
 
-              <p className="font-lato text-charcoal text-base leading-163 text-center max-w-155.5">
-                Help users find quick answers to common queries about Herbert,
-                our AI-powered assistant for German visa and immigration
-                processes.
-              </p>
-            </div>
+            <p className="font-lato text-charcoal text-base leading-163 max-w-155.5 mx-auto">
+              Help users find quick answers to common queries about Herbert,
+              our AI-powered assistant for German visa and immigration
+              processes.
+            </p>
+          </div>
 
-            {/* FAQ Section */}
-            <div className="w-full max-w-[1140px] mx-auto">
+          <div className="w-full max-w-295 px-5 mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+              {faqs.map((faq, index) => {
+                const isOpen = openFaq === index;
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
-
-                {faqs.map((faq, index) => (
-                  <details
+                return (
+                  <div
                     key={index}
-                    open={index === 0 ? true : undefined}
-                    className={`group border border-soft-black rounded-md p-[18px] ${
-                      index === 0
-                        ? "shadow-[0px_4px_20px_rgba(0,0,0,0.10)]"
-                        : ""
+                    className={`border rounded-md p-4.5 transition-all duration-300 ease-in-out ${
+                      isOpen
+                        ? "border-transparent shadow-[0px_0px_16px_6px_#8080801F]"
+                        : "border-black/16 shadow-none"
                     }`}
                   >
-                    <summary className="flex items-center justify-between gap-4 cursor-pointer list-none">
-
+                    <button
+                      type="button"
+                      onClick={() => toggleFaq(index)}
+                      aria-expanded={isOpen}
+                      className="flex items-center justify-between gap-4 cursor-pointer w-full text-left"
+                    >
                       <span className="font-lato text-base font-normal text-rich-black">
                         {faq.question}
                       </span>
 
-                      <span className="shrink-0 text-rich-black text-xl leading-none">
-                        <span className="group-open:hidden">+</span>
-                        <span className="hidden group-open:inline">−</span>
+                      <span
+                        className={`shrink-0 text-rich-black text-xl leading-none transition-transform duration-300 ${
+                          isOpen ? "rotate-180" : "rotate-0"
+                        }`}
+                      >
+                        {isOpen ? "−" : "+"}
                       </span>
+                    </button>
 
-                    </summary>
+                    <div
+                      className={`grid transition-[grid-template-rows,opacity] duration-500 ease-in-out ${
+                        isOpen
+                          ? "grid-rows-[1fr] opacity-100"
+                          : "grid-rows-[0fr] opacity-0"
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <p className="font-lato text-base font-normal text-charcoal pt-3">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
 
-                    <p className="font-lato text-base font-normal text-charcoal mt-3">
-                      {faq.answer}
-                    </p>
+            <div className="flex items-center justify-center mt-9">
+              <button className="group relative cursor-pointer overflow-hidden flex items-center justify-center px-6.75 py-3.5 bg-sandy-orange border border-sandy-orange rounded-lg">
+                  <span className="absolute inset-0 z-0 bg-white translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
-                  </details>
-                ))}
-
-              </div>
-
-              {/* View All Button */}
-              <div className="flex items-center justify-center mt-9">
-                <button className="px-6 py-3 bg-sandy-orange rounded-lg font-lato text-base font-semibold text-white">
-                  View All
+                  <span className="relative z-10 font-semibold text-white text-base leading-117 group-hover:text-sandy-orange transition-all duration-300 ease-in">
+                    View All
+                  </span>
                 </button>
-              </div>
-
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

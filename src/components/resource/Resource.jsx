@@ -29,16 +29,13 @@ const Resource = () => {
                 </ul>
               </div>
               <div className="flex">
-               <button className="group relative cursor-pointer overflow-hidden flex items-center justify-center px-6.75 py-3.5 bg-sandy-orange border border-sandy-orange rounded-lg">
+                <button className="group relative cursor-pointer overflow-hidden flex items-center justify-center px-6.75 py-3.5 bg-sandy-orange border border-sandy-orange rounded-lg">
+                  <span className="absolute inset-0 z-0 bg-white translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
-  <span className="absolute inset-0 z-0 bg-white translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
-
-  
-  <span className="relative z-10 font-semibold text-white text-base leading-117 group-hover:text-sandy-orange transition-all duration-300 ease-in">
-    Learn more
-  </span>
-
-</button>
+                  <span className="relative z-10 font-semibold text-white text-base leading-117 group-hover:text-sandy-orange transition-all duration-300 ease-in">
+                    Learn more
+                  </span>
+                </button>
               </div>
             </div>
 
