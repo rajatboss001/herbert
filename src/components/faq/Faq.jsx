@@ -1,4 +1,5 @@
-
+import Minus from  "../../assets/images/svg/minus.svg"
+import Plus from  "../../assets/images/svg/plus.svg"
 import { useState } from "react";
 
 const Faq = () => {
@@ -51,14 +52,14 @@ const Faq = () => {
               <span className="text-orange-red">Questions</span>
             </h2>
 
-            <p className="font-lato text-charcoal text-base leading-163 max-w-155.5 mx-auto">
+            <p className="font-lato text-charcoal text-base leading-150 max-w-155.5 mx-auto">
               Help users find quick answers to common queries about Herbert,
               our AI-powered assistant for German visa and immigration
               processes.
             </p>
           </div>
 
-          <div className="w-full max-w-295 px-5 mx-auto">
+          <div className="w-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
               {faqs.map((faq, index) => {
                 const isOpen = openFaq === index;
@@ -66,7 +67,7 @@ const Faq = () => {
                 return (
                   <div
                     key={index}
-                    className={`border rounded-md p-4.5 transition-all duration-300 ease-in-out ${
+                    className={`border rounded-md px-6 py-4.5 transition-all duration-300 ease-in-out ${
                       isOpen
                         ? "border-transparent shadow-[0px_0px_16px_6px_#8080801F]"
                         : "border-black/16 shadow-none"
@@ -82,13 +83,13 @@ const Faq = () => {
                         {faq.question}
                       </span>
 
-                      <span
-                        className={`shrink-0 text-rich-black text-xl leading-none transition-transform duration-300 ${
-                          isOpen ? "rotate-180" : "rotate-0"
-                        }`}
-                      >
-                        {isOpen ? "−" : "+"}
-                      </span>
+                     <span className="shrink-0">
+  <img
+    src={isOpen ? Minus : Plus}
+    alt={isOpen ? "Minus" : "Plus"}
+    className="w-5 h-5"
+  />
+</span>
                     </button>
 
                     <div
@@ -99,7 +100,7 @@ const Faq = () => {
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <p className="font-lato text-base font-normal text-charcoal pt-3">
+                        <p className="font-lato text-base font-normal text-charcoal mt-3 leading-150">
                           {faq.answer}
                         </p>
                       </div>
