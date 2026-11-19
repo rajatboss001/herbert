@@ -1,22 +1,21 @@
 import { SWIPER_DATA } from "../../utils/helper"
-import bgImage from "../../assets/images/webp/hero_img.webp"
 const Swiper = () => {
     return (
         <section>
-            <div className="swiper-container">
-                <div className="flex">
+            <div className="swiper-container max-w-295 px-5 mx-auto">
+                <div className="flex gap-6">
                     {SWIPER_DATA.map((items, idx) => (
-                        <div key={idx} className="py-5 pl-18.75 pr-19.25 gap-6">
-                            <div className="w-14 h-14 bg-orange-yellow-gradient rounded-full mx-auto">
-                                <img
+                        <div key={idx} className="py-5 pl-18.75 pr-19.25 border border-black/16 rounded-lg">
+                            <div className="w-14 h-14 bg-orange-200 rounded-full mx-auto flex justify-center item-center">
+                                <img width={24} height={24}
                                     src={items.img}
                                     alt={items.title}
-                                    className="w-6 h-6"
+                                    className=""
                                 />
                             </div>
 
-                            <h4 className="text-center">{items.title}</h4>
-                            <p className="text-center">{items.para}</p>
+                            <h4 className="text-center font-lato text-lg font-medium mt-4">{items.title}</h4>
+                            <p className="text-center font-lato text-base font-normal mt-3">{items.para}</p>
                         </div>
                     ))}
                 </div>
