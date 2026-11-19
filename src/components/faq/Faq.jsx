@@ -1,5 +1,5 @@
-import Minus from  "../../assets/images/svg/minus.svg"
-import Plus from  "../../assets/images/svg/plus.svg"
+import Minus from "../../assets/images/svg/minus.svg";
+import Plus from "../../assets/images/svg/plus.svg";
 import { useState } from "react";
 
 const Faq = () => {
@@ -53,9 +53,8 @@ const Faq = () => {
             </h2>
 
             <p className="font-lato text-charcoal text-base leading-150 max-w-155.5 mx-auto">
-              Help users find quick answers to common queries about Herbert,
-              our AI-powered assistant for German visa and immigration
-              processes.
+              Help users find quick answers to common queries about Herbert, our
+              AI-powered assistant for German visa and immigration processes.
             </p>
           </div>
 
@@ -67,7 +66,7 @@ const Faq = () => {
                 return (
                   <div
                     key={index}
-                    className={`border rounded-md px-6 py-4.5 transition-all duration-300 ease-in-out ${
+                    className={`border rounded-md px-6 py-[17.5px] box-border transition-all duration-300 ease-in-out ${
                       isOpen
                         ? "border-transparent shadow-[0px_0px_16px_6px_#8080801F]"
                         : "border-black/16 shadow-none"
@@ -83,17 +82,19 @@ const Faq = () => {
                         {faq.question}
                       </span>
 
-                     <span className="shrink-0">
-  <img
-    src={isOpen ? Minus : Plus}
-    alt={isOpen ? "Minus" : "Plus"}
-    className="w-5 h-5"
-  />
-</span>
+                      <span className="shrink-0">
+                        <img
+                          height={14}
+                          width={14}
+                          src={isOpen ? Minus : Plus}
+                          alt={isOpen ? "Minus" : "Plus"}
+                          className=""
+                        />
+                      </span>
                     </button>
 
                     <div
-                      className={`grid transition-[grid-template-rows,opacity] duration-500 ease-in-out ${
+                      className={`grid transition-all duration-300 ease-in ${
                         isOpen
                           ? "grid-rows-[1fr] opacity-100"
                           : "grid-rows-[0fr] opacity-0"
@@ -110,14 +111,14 @@ const Faq = () => {
               })}
             </div>
 
-            <div className="flex items-center justify-center mt-9">
+            <div className="flex items-center justify-center mt-12">
               <button className="group relative cursor-pointer overflow-hidden flex items-center justify-center px-6.75 py-3.5 bg-sandy-orange border border-sandy-orange rounded-lg">
-                  <span className="absolute inset-0 z-0 bg-white translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
+                <span className="absolute inset-0 z-0 bg-white translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
-                  <span className="relative z-10 font-semibold text-white text-base leading-117 group-hover:text-sandy-orange transition-all duration-300 ease-in">
-                    View All
-                  </span>
-                </button>
+                <span className="relative z-10 font-semibold text-white text-base leading-117 group-hover:text-sandy-orange transition-all duration-300 ease-in">
+                  View All
+                </span>
+              </button>
             </div>
           </div>
         </div>
