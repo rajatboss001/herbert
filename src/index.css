@@ -1,26 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 
 @theme {
+  /* Fonts */
+
   --font-lato: "Lato", sans-serif;
   --font-rubik: "Rubik", sans-serif;
 
-  --color-charcoal: #5F5F5F;
+  /* Colors */
+
+  --color-charcoal: #5f5f5f;
   --color-rich-black: #010101;
-  --color-orange-red: #FF4C24;
-  --color-sandy-orange: #FF9748;
+  --color-orange-red: #ff4c24;
+  --color-sandy-orange: #ff9748;
+
+  /* Custom Text Sizes */
 
   --text-custom-5xl: 56px;
 
-  --leading-118: 118%;
+  /* Custom Line Height */
+
+  --leading-163: 163%;
   --leading-150: 150%;
   --leading-119: 119%;
+  --leading-118: 118%;
+  --leading-117: 117%;
+  --leading-100: 100%;
 
-  @utility bg-orange-yellow-gradient {
+  /* @utility bg-orange-yellow-gradient {
     background: linear-gradient(
         241.09deg,
         rgba(255, 76, 36, 0.15) -34.32%,
         rgba(255, 227, 108, 0.15) 109.3%
     );
-}
+} */
+
 }
