@@ -1,14 +1,6 @@
 import checklist_icon from "../assets/images/svg/checklist_icon.svg"
 import forms_icon from "../assets/images/svg/forms_icon.svg"
 import language_icon from "../assets/images/svg/language_icon.svg"
-// import one from "../assets/images/svg/1.svg"
-// import two from "../assets/images/svg/2.svg"
-// import three from "../assets/images/svg/3.svg"
-// import four from "../assets/images/svg/4.svg"
-// import five from "../assets/images/svg/5.svg"
-// import six from "../assets/images/svg/6.svg"
-
-
 
 export const SWIPER_DATA = [
     {
