@@ -1,4 +1,5 @@
 import resource_img_big from "../../assets/images/png/resource_img.png";
+import Change_Img from "../../assets/images/png/resource-change-img.png";
 
 const Resource = () => {
   return (
@@ -29,23 +30,26 @@ const Resource = () => {
                 </ul>
               </div>
               <div className="flex">
-                <button className="group relative cursor-pointer overflow-hidden flex items-center justify-center px-6.75 py-3.5 bg-sandy-orange border border-sandy-orange rounded-lg">
+                <button className="group relative cursor-pointer overflow-hidden flex items-center justify-center px-[23.5px] py-3.5 bg-sandy-orange border border-sandy-orange rounded-lg">
                   <span className="absolute inset-0 z-0 bg-white translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
-                  <span className="relative z-10 font-semibold text-white text-base leading-117 group-hover:text-sandy-orange transition-all duration-300 ease-in">
+                  <span className="font-rubik relative z-10 font-semibold text-white text-base leading-117 group-hover:text-sandy-orange transition-all duration-300 ease-in">
                     Learn more
                   </span>
                 </button>
               </div>
             </div>
 
-            <div className="flex">
+            <div className="flex max-sm:hidden">
               <img
                 width={701}
-                height={602}
+                height={602} className="max-md:max-w-150"
                 src={resource_img_big}
                 alt="RESOURCE_IMAGE_ONE"
               />
+            </div>
+            <div className="max-md:sm hidden">
+              <img height={305} width={261} src={Change_Img} alt="RESPONSIVE_CHANGED_IMAGE" />
             </div>
           </div>
         </div>

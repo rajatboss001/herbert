@@ -3,6 +3,7 @@ import Home from "./pages/Home"
 import Swiper from "./components/swiper/Swiper"
 import Resource from "./components/resource/Resource"
 import Faq from "./components/faq/Faq"
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -11,6 +12,7 @@ const App = () => {
       <Route path="/swiper" element={<Swiper />} />
       <Route path="/resource" element={<Resource/>}/>
       <Route path="/Faq" element={<Faq/>}/>
+      
     </Routes>
     </BrowserRouter>
   )
