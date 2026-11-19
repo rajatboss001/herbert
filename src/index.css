@@ -16,11 +16,4 @@
   --leading-150: 150%;
   --leading-119: 119%;
 
-  @utility bg-orange-yellow-gradient {
-    background: linear-gradient(
-        241.09deg,
-        rgba(255, 76, 36, 0.15) -34.32%,
-        rgba(255, 227, 108, 0.15) 109.3%
-    );
-}
 }

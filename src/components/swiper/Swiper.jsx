@@ -1,5 +1,4 @@
 import { SWIPER_DATA } from "../../utils/helper"
-import bgImage from "../../assets/images/webp/hero_img.webp"
 const Swiper = () => {
     return (
         <section>
