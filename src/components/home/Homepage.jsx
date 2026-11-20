@@ -1,6 +1,5 @@
 import Navbar from "../common/Navbar"
 import hello from "../../assets/images/svg/hello.svg"
-// import hero_img_1 from "../../assets/images/png/hero_img_1.png"
 import hero_img_2 from "../../assets/images/png/hero_img_2.png"
 import hero_img_3 from "../../assets/images/png/hero_img_3.png"
 import bgIimage from "../../assets/images/webp/Hero_bg.webp"
