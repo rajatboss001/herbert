@@ -6,15 +6,20 @@
   --font-lato: "Lato", sans-serif;
   --font-rubik: "Rubik", sans-serif;
 
+  --color-dark: #010101;
   --color-charcoal: #5F5F5F;
   --color-rich-black: #010101;
   --color-orange-red: #FF4C24;
   --color-sandy-orange: #FF9748;
 
+
+  --text-custom-2xl: 28px;
   --text-custom-5xl: 56px;
 
   --leading-118: 118%;
-  --leading-150: 150%;
   --leading-119: 119%;
+  --leading-120: 120%;
+  --leading-134: 134%;
+  --leading-150: 150%;
 
 }
