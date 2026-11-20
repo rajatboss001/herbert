@@ -3,6 +3,7 @@ import Swiper from "../components/swiper/Swiper"
 import Resource from "../components/resource/Resource"
 import Faq from "../components/faq/Faq"
 import Features from "../components/features/Features"
+import Footer from "../components/footer/Footer"
 
 const Home = () => {
   return (
@@ -10,8 +11,9 @@ const Home = () => {
       <Homepage />
       <Swiper />
       <Features />
-      <Resource/>
-      <Faq/>
+      <Resource />
+      <Faq />
+      <Footer />
     </div>
   )
 }
