@@ -48,7 +48,7 @@ const Resource = () => {
                 alt="RESOURCE_IMAGE_ONE"
               />
             </div>
-            <div className="max-md:sm hidden">
+            <div className="max-md:sm flex">
               <img height={305} width={261} src={Change_Img} alt="RESPONSIVE_CHANGED_IMAGE" />
             </div>
           </div>
