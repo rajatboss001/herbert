@@ -20,7 +20,7 @@ const Homepage = () => {
 
           <div
             className="
-              hero-row
+              ~hero-row
               flex
               mr-5.25
               gap-y-10
