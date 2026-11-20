@@ -40,7 +40,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     className="text-charcoal font-normal text-base block leading-150 hover:text-dark transition-all duration-300"
-                                    href="source"
+                                    href="Source"
                                 >
                                     Sources
                                 </a>
