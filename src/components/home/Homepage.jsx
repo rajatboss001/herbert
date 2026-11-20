@@ -82,7 +82,7 @@ const Homepage = () => {
                   leading-118
                   max-md:text-custom-2xl
                 "
-              >
+                 >
                 Navigating{" "}
                 <span className="text-orange-red">
                   German Bureaucracy
