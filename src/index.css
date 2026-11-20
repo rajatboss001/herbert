@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -16,11 +17,4 @@
   --leading-150: 150%;
   --leading-119: 119%;
 
-  @utility bg-orange-yellow-gradient {
-    background: linear-gradient(
-        241.09deg,
-        rgba(255, 76, 36, 0.15) -34.32%,
-        rgba(255, 227, 108, 0.15) 109.3%
-    );
-}
 }
