@@ -1,6 +1,8 @@
 import Navbar from "../common/Navbar"
-import hero_img_1 from "../../assets/images/png/hero_img_1.png"
+import hello from "../../assets/images/svg/hello.svg"
+// import hero_img_1 from "../../assets/images/png/hero_img_1.png"
 import hero_img_2 from "../../assets/images/png/hero_img_2.png"
+import hero_img_3 from "../../assets/images/png/hero_img_3.png"
 import bgIimage from "../../assets/images/webp/Hero_bg.webp"
 
 const Homepage = () => {
@@ -9,21 +11,21 @@ const Homepage = () => {
       style={{
         backgroundImage: `url(${bgIimage})`,
       }}
-      className="bg-cover bg-center"
+      className="bg-cover bg-center px-5"
     >
       <Navbar />
 
       <div>
-        <div className="hero-container max-w-332.25 px-5 mx-auto pt-13.75">
+        <div className="hero-container max-w-322.25 mx-auto pt-28">
 
           <div
             className="
               hero-row
               flex
               mr-5.25
-              items-start
-
-              max-xl:flex-wrap
+              gap-y-10
+              max-xl:flex-col-reverse
+              max-xl:items-center
               max-xl:mr-0
             "
           >
@@ -33,22 +35,25 @@ const Homepage = () => {
               className="
                 order-1
                 shrink-0
-                -mr-19.5
-
-                max-xl:order-2
-                max-xl:mr-0
-                max-xl:w-1/2
+                mr-4.5
+                relative 
                 max-xl:flex
                 max-xl:justify-start
               "
             >
-              <img
-                width={329}
-                height={592}
-                src={hero_img_1}
-                alt="hero_img"
-                className="max-w-full h-auto"
-              />
+              <img className="absolute -right-24 -top-16.25" width={108} height={78} src={hello} alt="hello" />
+              <div>
+                <img
+                  width={232}
+                  height={513}
+                  src={hero_img_3}
+                  alt="hero_img"
+                  className="max-w-full h-auto"
+                />
+              </div>
+              <div>
+                <img className="hidden max-xl:block" width={139} height={231} src={hero_img_2} alt="hero_img" />
+              </div>
             </div>
 
 
@@ -59,7 +64,6 @@ const Homepage = () => {
                 mt-21
                 max-w-186.5
                 w-full
-
                 max-xl:order-1
                 max-xl:max-w-186.5
                 max-xl:mx-auto
@@ -76,6 +80,7 @@ const Homepage = () => {
                   text-rich-black
                   font-semibold
                   leading-118
+                  max-md:text-custom-2xl
                 "
               >
                 Navigating{" "}
@@ -92,6 +97,7 @@ const Homepage = () => {
                   text-charcoal
                   font-lato
                   leading-150
+                  max-md:text-sm
                 "
               >
                 Herbert Visa: Your AI-powered assistant for German visa and
@@ -120,6 +126,7 @@ const Homepage = () => {
                   transition-all
                   duration-500
                   ease-in-out
+                  max-md:text-sm
                   hover:bg-transparent
                   hover:border-sandy-orange
                   hover:text-sandy-orange
@@ -138,13 +145,11 @@ const Homepage = () => {
                 mt-14.25
                 -ml-8
                 shrink-0
+                max-xl:hidden
 
                 max-xl:order-3
                 max-xl:ml-0
                 max-xl:mt-0
-                max-xl:w-1/2
-                max-xl:flex
-                max-xl:justify-end
               "
             >
               <img
@@ -152,7 +157,7 @@ const Homepage = () => {
                 height={538}
                 src={hero_img_2}
                 alt="hero_img"
-                className="max-w-full h-auto"
+                className="max-w-full h-auto max-xl:max-w-36"
               />
             </div>
 
