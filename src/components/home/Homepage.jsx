@@ -11,13 +11,13 @@ const Homepage = () => {
 
       <div>
         <div className="hero-container max-w-322.25 mx-auto pt-28 max-lg:pt-20 pb-10">
-          <div className="hero-row flex mr-5.25 gap-y-10 max-xl:flex-col-reverse max-xl:items-center max-xl:mr-0">
+          <div className="hero-row flex mr-5.25 gap-y-18.5 max-xl:flex-col-reverse max-xl:items-center max-xl:mr-0">
 
             {/* LEFT IMAGE */}
-            <div className="mr-4.5 max-xl:flex">
+            <div className="mr-4.5 max-xl:flex max-xl:gap-5.25">
               <div className="relative">
                 <img
-                className="absolute -right-24 -top-16.25 max-xl:-top-10 max-xl:-right-8.75 max-xl:max-w-[67px]"
+                className="absolute -right-24 -top-16.25 max-xl:-top-10 max-xl:-right-8.75 max-xl:max-w-16.75"
                 width={108}
                 height={78}
                 src={hello}
