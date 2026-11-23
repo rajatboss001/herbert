@@ -1,70 +1,211 @@
-import logo from "../../assets/images/svg/logo.svg"
+import logo from "../../assets/images/svg/logo.svg";
 const Footer = () => {
   return (
     <footer className="bg-warm-ivory">
-        <div className="footer-container pt-53 max-w-295 px-5 mx-auto pb-12.5">
-            <div className="footer-row flex justify-between gap-x-10 gap-y-10 max-lg:flex-wrap">
-                <div className="left max-w-103">
-                    <a href="#">
-                        <img width={326} height={98} src={logo} alt="logo" />
-                    </a>
-                    <p className="font-normal text-base font-lato text-charcoal mt-3.75">Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor.</p>
-                </div>
-                <div className="right max-w-129.5 flex justify-between mt-4 w-full max-sm:flex-wrap">
-                    <div>
-                        <h4 className="font-medium font-lato text-base text-dark mb-4">Quick Links</h4>
-                        <ul className="flex flex-col gap-2">
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Plans</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="font-medium font-lato text-base text-dark mb-4">Support</h4>
-                        <ul className="flex flex-col gap-2">
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Term & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 className="font-medium font-lato text-base text-dark mb-4">Follow Us</h4>
-                        <div className="gap-3 flex">
-                            <a href="#">
-                                <div className="w-9 h-9 flex justify-center items-center">
-                                    <svg width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.84188 18V9.78936H8.49534L8.89261 6.5895H5.8418V4.54653C5.8418 3.6201 6.08946 2.98879 7.36862 2.98879L9 2.98799V0.126072C8.71784 0.0871459 7.74937 0 6.6228 0C4.27062 0 2.66027 1.49118 2.66027 4.22972V6.5895H0V9.78936H2.66027V17.9999H5.84188V18Z" fill="#FF9748"/>
-</svg>
-
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div className="w-9 h-9 flex justify-center items-center">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 9C0 5.40486 0 3.60729 0.856692 2.31255C1.23925 1.73439 1.73439 1.23925 2.31255 0.856692C3.60729 0 5.40486 0 9 0C12.5951 0 14.3927 0 15.6874 0.856692C16.2656 1.23925 16.7608 1.73439 17.1433 2.31255C18 3.60729 18 5.40486 18 9C18 12.5951 18 14.3927 17.1433 15.6874C16.7608 16.2656 16.2656 16.7608 15.6874 17.1433C14.3927 18 12.5951 18 9 18C5.40486 18 3.60729 18 2.31255 17.1433C1.73439 16.7608 1.23925 16.2656 0.856692 15.6874C0 14.3927 0 12.5951 0 9ZM13.6596 8.99956C13.6596 11.5729 11.5735 13.659 9.00022 13.659C6.42689 13.659 4.34081 11.5729 4.34081 8.99956C4.34081 6.42624 6.42689 4.34015 9.00022 4.34015C11.5735 4.34015 13.6596 6.42624 13.6596 8.99956ZM9.00022 12.0826C10.7029 12.0826 12.0832 10.7023 12.0832 8.99956C12.0832 7.29686 10.7029 5.91655 9.00022 5.91655C7.29752 5.91655 5.91721 7.29686 5.91721 8.99956C5.91721 10.7023 7.29752 12.0826 9.00022 12.0826ZM13.8438 5.20137C14.4485 5.20137 14.9387 4.7112 14.9387 4.10654C14.9387 3.50189 14.4485 3.01172 13.8438 3.01172C13.2392 3.01172 12.749 3.50189 12.749 4.10654C12.749 4.7112 13.2392 5.20137 13.8438 5.20137Z" fill-rule="evenodd" clip-rule="evenodd" fill="#FF9748"/>
-</svg>
-
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div className="w-9 h-9 flex justify-center items-center">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 2.09091C0 1.48484 0.202709 0.984836 0.608108 0.590909C1.01351 0.196964 1.54055 0 2.18919 0C2.82626 0 3.34169 0.193927 3.73552 0.581818C4.14092 0.981818 4.34363 1.50302 4.34363 2.14545C4.34363 2.72727 4.14672 3.21211 3.7529 3.6C3.3475 4 2.81467 4.2 2.15444 4.2H2.13707C1.49999 4.2 0.984562 4 0.590734 3.6C0.196905 3.2 0 2.69696 0 2.09091ZM0.225869 18V5.85455H4.08301V18H0.225869ZM6.22008 18H10.0772V11.2182C10.0772 10.7939 10.1236 10.4667 10.2162 10.2364C10.3784 9.82424 10.6245 9.47575 10.9546 9.19091C11.2847 8.90605 11.6988 8.76364 12.1969 8.76364C13.4942 8.76364 14.1429 9.67878 14.1429 11.5091V18H18V11.0364C18 9.24242 17.5946 7.88182 16.7838 6.95455C15.973 6.02727 14.9015 5.56364 13.5695 5.56364C12.0753 5.56364 10.9112 6.23636 10.0772 7.58182V7.61818H10.0598L10.0772 7.58182V5.85455H6.22008C6.24324 6.24242 6.25483 7.44847 6.25483 9.47273C6.25483 11.497 6.24324 14.3394 6.22008 18Z" fill="#FF9748"/>
-</svg>
-
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <div className="footer-container pt-53 max-w-295 px-5 mx-auto pb-12.5">
+        <div className="footer-row flex justify-between gap-x-10 gap-y-10 max-lg:flex-wrap">
+          <div className="left max-w-103">
+            <a href="#">
+              <img width={326} height={98} src={logo} alt="logo" />
+            </a>
+            <p className="font-normal text-base font-lato text-charcoal mt-3.75">
+              Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae
+              velit mi sed mattis tempor tristique. Purus sed phasellus metus
+              lectus auctor.
+            </p>
+          </div>
+          <div className="right max-w-129.5 flex justify-between mt-4 w-full max-sm:flex-wrap">
+            <div>
+              <h4 className="font-medium font-lato text-base text-dark mb-4">
+                Quick Links
+              </h4>
+              <ul className="flex flex-col gap-2 text-charcoal">
+                <li>
+                  <a
+                    href="#"
+                    className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:w-0 after:h-px after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:w-0 after:h-px after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:w-0 after:h-px after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    Features
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:w-0 after:h-px after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    Plans
+                  </a>
+                </li>
+              </ul>
             </div>
+            <div>
+              <h4 className="font-medium font-lato text-base text-dark mb-4">
+                Support
+              </h4>
+              <ul className="flex flex-col gap-2 text-charcoal">
+                <li>
+                  <a
+                    href="#"
+                    className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:w-0 after:h-px after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    Help Center
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:w-0 after:h-px after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    Term & Conditions
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:-bottom-1 after:w-0 after:h-px after:bg-current after:transition-all after:duration-300 hover:after:w-full"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-medium font-lato text-base text-dark mb-4">
+                Follow Us
+              </h4>
+              <div className="gap-3 flex">
+                <a target="_blank" href="https://facebook.com">
+                  <div className="w-9 h-9 flex justify-center items-center hover:-translate-y-1 duration-300 ease-out transition-all">
+                    <svg
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 18C0 8.05888 8.05888 0 18 0C27.9411 0 36 8.05888 36 18C36 27.9411 27.9411 36 18 36C8.05888 36 0 27.9411 0 18Z"
+                        fill="url(#paint0_linear_561_610)"
+                        fill-opacity="0.15"
+                      />
+                      <path
+                        d="M18.8419 27V18.7894H21.4953L21.8926 15.5895H18.8418V13.5465C18.8418 12.6201 19.0895 11.9888 20.3686 11.9888L22 11.988V9.12607C21.7178 9.08715 20.7494 9 19.6228 9C17.2706 9 15.6603 10.4912 15.6603 13.2297V15.5895H13V18.7894H15.6603V26.9999H18.8419V27Z"
+                        fill="#FF9748"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_561_610"
+                          x1="54.5547"
+                          y1="-1.125"
+                          x2="-6.94618"
+                          y2="32.8369"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FF4C24" />
+                          <stop offset="1" stop-color="#FFE36C" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </a>
+                <a target="_blank" href="https://instagram.com">
+                  <div className="w-9 h-9 flex justify-center items-center hover:-translate-y-1 duration-300 ease-out transition-all">
+                    <svg
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 18C0 8.05888 8.05888 0 18 0C27.9411 0 36 8.05888 36 18C36 27.9411 27.9411 36 18 36C8.05888 36 0 27.9411 0 18Z"
+                        fill="url(#paint0_linear_561_612)"
+                        fill-opacity="0.15"
+                      />
+                      <path
+                        d="M9 18C9 14.4049 9 12.6073 9.85669 11.3126C10.2392 10.7344 10.7344 10.2392 11.3126 9.85669C12.6073 9 14.4049 9 18 9C21.5951 9 23.3927 9 24.6874 9.85669C25.2656 10.2392 25.7608 10.7344 26.1433 11.3126C27 12.6073 27 14.4049 27 18C27 21.5951 27 23.3927 26.1433 24.6874C25.7608 25.2656 25.2656 25.7608 24.6874 26.1433C23.3927 27 21.5951 27 18 27C14.4049 27 12.6073 27 11.3126 26.1433C10.7344 25.7608 10.2392 25.2656 9.85669 24.6874C9 23.3927 9 21.5951 9 18ZM22.6596 17.9996C22.6596 20.5729 20.5735 22.659 18.0002 22.659C15.4269 22.659 13.3408 20.5729 13.3408 17.9996C13.3408 15.4262 15.4269 13.3401 18.0002 13.3401C20.5735 13.3401 22.6596 15.4262 22.6596 17.9996ZM18.0002 21.0826C19.7029 21.0826 21.0832 19.7023 21.0832 17.9996C21.0832 16.2969 19.7029 14.9166 18.0002 14.9166C16.2975 14.9166 14.9172 16.2969 14.9172 17.9996C14.9172 19.7023 16.2975 21.0826 18.0002 21.0826ZM22.8438 14.2014C23.4485 14.2014 23.9387 13.7112 23.9387 13.1065C23.9387 12.5019 23.4485 12.0117 22.8438 12.0117C22.2392 12.0117 21.749 12.5019 21.749 13.1065C21.749 13.7112 22.2392 14.2014 22.8438 14.2014Z"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        fill="#FF9748"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_561_612"
+                          x1="54.5547"
+                          y1="-1.125"
+                          x2="-6.94618"
+                          y2="32.8369"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FF4C24" />
+                          <stop offset="1" stop-color="#FFE36C" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </a>
+                <a target="_blank" href="https://linkedin.com">
+                  <div className="w-9 h-9 flex justify-center items-center hover:-translate-y-1 duration-300 ease-out transition-all">
+                    <svg
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 18C0 8.05888 8.05888 0 18 0C27.9411 0 36 8.05888 36 18C36 27.9411 27.9411 36 18 36C8.05888 36 0 27.9411 0 18Z"
+                        fill="url(#paint0_linear_561_618)"
+                        fill-opacity="0.15"
+                      />
+                      <path
+                        d="M9 11.0909C9 10.4848 9.20271 9.98484 9.60811 9.59091C10.0135 9.19696 10.5405 9 11.1892 9C11.8263 9 12.3417 9.19393 12.7355 9.58182C13.1409 9.98182 13.3436 10.503 13.3436 11.1455C13.3436 11.7273 13.1467 12.2121 12.7529 12.6C12.3475 13 11.8147 13.2 11.1544 13.2H11.1371C10.5 13.2 9.98456 13 9.59073 12.6C9.19691 12.2 9 11.697 9 11.0909ZM9.22587 27V14.8545H13.083V27H9.22587ZM15.2201 27H19.0772V20.2182C19.0772 19.7939 19.1236 19.4667 19.2162 19.2364C19.3784 18.8242 19.6245 18.4757 19.9546 18.1909C20.2847 17.9061 20.6988 17.7636 21.1969 17.7636C22.4942 17.7636 23.1429 18.6788 23.1429 20.5091V27H27V20.0364C27 18.2424 26.5946 16.8818 25.7838 15.9545C24.973 15.0273 23.9015 14.5636 22.5695 14.5636C21.0753 14.5636 19.9112 15.2364 19.0772 16.5818V16.6182H19.0598L19.0772 16.5818V14.8545H15.2201C15.2432 15.2424 15.2548 16.4485 15.2548 18.4727C15.2548 20.497 15.2432 23.3394 15.2201 27Z"
+                        fill="#FF9748"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_561_618"
+                          x1="54.5547"
+                          y1="-1.125"
+                          x2="-6.94618"
+                          y2="32.8369"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stop-color="#FF4C24" />
+                          <stop offset="1" stop-color="#FFE36C" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="py-4 border-t border-black/16 px-5">
-            <p className="font-normal text-base font-lato text-center">Copyright © 2024 herbert, All rights reserved</p>
-        </div>
+      </div>
+      <div className="py-4 border-t border-black/16 px-5">
+        <p className="font-normal text-base font-lato text-center">
+          Copyright © 2024 herbert, All rights reserved
+        </p>
+      </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

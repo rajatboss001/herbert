@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -16,7 +16,7 @@
   --color-rich-black: #010101;
   --color-orange-red: #ff4c24;
   --color-sandy-orange: #ff9748;
-  --color-warm-ivory: #FFF8F2;
+  --color-warm-ivory: #fff8f2;
 
   /* Custom Text Sizes */
 
@@ -36,5 +36,4 @@
   --leading-120: 120%;
   --leading-134: 134%;
   --leading-150: 150%;
-
 }
