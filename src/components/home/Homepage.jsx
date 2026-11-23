@@ -2,6 +2,7 @@ import Navbar from "../common/Navbar";
 import hello from "../../assets/images/svg/hello.svg";
 import hero_img_2 from "../../assets/images/png/hero_img_2.png";
 import hero_img_3 from "../../assets/images/png/hero_img_3.png";
+import hero_img_4 from "../../assets/images/png/hero_img_4.png";
 import bgIimage from "../../assets/images/webp/Hero_bg.webp";
 
 const Homepage = () => {
@@ -14,19 +15,19 @@ const Homepage = () => {
           <div className="hero-row flex mr-5.25 gap-y-18.5 max-xl:flex-col-reverse max-xl:items-center max-xl:mr-0">
 
             {/* LEFT IMAGE */}
-            <div className="mr-4.5 max-xl:flex max-xl:gap-5.25">
+            <div className="max-xl:flex max-xl:gap-5.25 -mr-5.25">
               <div className="relative">
                 <img
-                className="absolute -right-24 -top-16.25 max-xl:-top-10 max-xl:-right-8.75 max-xl:max-w-16.75"
+                className="absolute -right-14 -top-16.25 max-xl:-top-10 max-xl:-right-8.75 max-xl:max-w-16.75"
                 width={108}
                 height={78}
                 src={hello}
                 alt="hello"
               />
                 <img
-                  width={232}
-                  height={513}
-                  src={hero_img_3}
+                  width={272}
+                  height={527}
+                  src={hero_img_4}
                   alt="hero_img"
                   className="max-w-full h-auto max-xl:max-w-42"
                 />
@@ -44,7 +45,7 @@ const Homepage = () => {
             </div>
 
             {/* CENTER CONTENT */}
-            <div className="order-2 mt-21 max-w-186.5 w-full max-xl:order-1 max-xl:max-w-186.5 max-xl:mx-auto max-xl:mt-0">
+            <div className="mt-6.75 [27px] max-w-186.5 w-full max-xl:order-1 max-xl:max-w-186.5 max-xl:mx-auto max-xl:mt-0">
               <h1 className="mb-4 text-center text-custom-5xl font-rubik text-rich-black font-semibold leading-118 max-md:text-custom-2xl">
                 Navigating{" "}
                 <span className="text-orange-red">German Bureaucracy</span>{" "}
@@ -62,7 +63,7 @@ const Homepage = () => {
             </div>
 
             {/* RIGHT IMAGE */}
-            <div className="order-3 mt-14.25 -ml-8 shrink-0 max-xl:hidden max-xl:order-3 max-xl:ml-0 max-xl:mt-0">
+            <div className="order-3 -ml-8 shrink-0 max-xl:hidden max-xl:order-3 max-xl:ml-0 max-xl:mt-0">
               <img
                 width={324}
                 height={538}

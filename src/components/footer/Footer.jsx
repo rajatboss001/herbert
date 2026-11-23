@@ -10,7 +10,7 @@ const Footer = () => {
                     </a>
                     <p className="font-normal text-base font-lato text-charcoal mt-3.75">Lorem ipsum dolor sit amet consectetur. Fusce tortor etiam vitae velit mi sed mattis tempor tristique. Purus sed phasellus metus lectus auctor.</p>
                 </div>
-                <div className="right max-w-129.5 flex justify-between mt-4 w-full">
+                <div className="right max-w-129.5 flex justify-between mt-4 w-full max-sm:flex-wrap">
                     <div>
                         <h4 className="font-medium font-lato text-base text-dark mb-4">Quick Links</h4>
                         <ul className="flex flex-col gap-2">
