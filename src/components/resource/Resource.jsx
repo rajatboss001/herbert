@@ -43,13 +43,19 @@ const Resource = () => {
             <div className="flex max-sm:hidden">
               <img
                 width={701}
-                height={602} className="max-md:max-w-150"
+                height={602}
+                className="max-md:max-w-150"
                 src={resource_img_big}
                 alt="RESOURCE_IMAGE_ONE"
               />
             </div>
-            <div className="max-md:sm flex">
-              <img height={305} width={261} src={Change_Img} alt="RESPONSIVE_CHANGED_IMAGE" />
+            <div className="max-sm:flex hidden">
+              <img
+                height={305}
+                width={261}
+                src={Change_Img}
+                alt="RESPONSIVE_CHANGED_IMAGE"
+              />
             </div>
           </div>
         </div>

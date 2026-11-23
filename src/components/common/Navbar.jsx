@@ -1,6 +1,6 @@
 import { useState } from "react"
 import logo from "../../assets/images/svg/logo.svg"
-import Source from "../../pages/Source"
+import source from "../../pages/Source"
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false)
@@ -40,7 +40,7 @@ const Navbar = () => {
                             <li>
                                 <a
                                     className="text-charcoal font-normal text-base block leading-150 hover:text-dark transition-all duration-300"
-                                    href="Source"
+                                    href="source"
                                 >
                                     Sources
                                 </a>
