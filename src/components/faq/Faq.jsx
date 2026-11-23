@@ -198,18 +198,18 @@ const Faq = () => {
         </div>
 
         <div className="mx-auto px-5 w-full max-w-295">
-          <div className="faq-cta mt-30 flex items-center justify-center bg-sandy-orange w-full py-16 rounded-lg flex-col -mb-33.5 relative">
-            <div className="flex items-center justify-center flex-col">
-              <h2 className="faq-cta-title font-semibold text-5xl text-white leading-119 max-w-158 mb-4 text-center">
+          <div className="faq-cta mt-15 md:mt-20 lg:mt-30 flex items-center justify-center bg-sandy-orange w-full py-5 sm:py-16 rounded-lg flex-col -mb-33.5 relative">
+            <div className="flex items-center justify-center flex-col px-5">
+              <h2 className="faq-cta-title font-semibold text-[24px] sm:text-5xl text-white leading-119 max-w-158 mb-4 text-center">
                 Need Help in Your Visa? Ask Herbert Now!
               </h2>
-              <p className="faq-cta-text font-lato text-white text-center text-base leading-150 max-w-132">
+              <p className="faq-cta-text font-lato text-white text-center text-sm sm:text-base leading-150 max-w-132">
                 Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit
                 phasellus mollis sit aliquam sit nullam.
               </p>
 
-              <div className="flex items-center justify-center gap-4 mt-10.5">
-                <button className="faq-cta-btn group relative cursor-pointer overflow-hidden flex items-center justify-center px-6 py-3.5 bg-white border border-white rounded-lg">
+              <div className="flex items-center justify-center gap-4 mt-10.5 sm:flex-row flex-col">
+                <button className="faq-cta-btn group sm:max-w-58.75 w-full text-nowrap relative cursor-pointer overflow-hidden flex items-center justify-center px-6 py-3.5 bg-white border border-white rounded-lg">
                   <span className="absolute inset-0 z-0 bg-sandy-orange translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
                   <span className="font-rubik relative z-10 font-semibold text-sandy-orange text-base leading-117 group-hover:text-white transition-all duration-300 ease-in">
@@ -217,7 +217,7 @@ const Faq = () => {
                   </span>
                 </button>
 
-                <button className="faq-cta-btn group relative cursor-pointer overflow-hidden flex items-center justify-center px-6 py-3.5 bg-sandy-orange border border-white rounded-lg">
+                <button className="faq-cta-btn group sm:max-w-34 w-full max-w-full text-nowrap relative cursor-pointer overflow-hidden flex items-center justify-center px-6 py-3.5 bg-sandy-orange border border-white rounded-lg">
                   <span className="absolute inset-0 z-0 bg-white translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
                   <span className="font-rubik relative z-10 font-semibold text-white text-base leading-117 group-hover:text-sandy-orange transition-all duration-300 ease-in">
