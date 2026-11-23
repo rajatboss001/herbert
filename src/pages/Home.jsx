@@ -4,6 +4,7 @@ import Resource from "../components/resource/Resource"
 import Faq from "../components/faq/Faq"
 import Features from "../components/features/Features"
 import Footer from "../components/footer/Footer"
+import Plan from "../components/pricing plan/Plan"
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Homepage />
       <Swiper />
       <Features />
+      <Plan />
       <Resource />
       <Faq />
       <Footer />

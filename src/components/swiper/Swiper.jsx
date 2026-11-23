@@ -5,7 +5,7 @@ const Swiper = () => {
             <div className="swiper-container max-w-295 px-5 mx-auto">
                 <div className="flex gap-6 max-xl:flex-wrap justify-center">
                     {SWIPER_DATA.map((items, idx) => (
-                        <div key={idx} className="py-5 pl-18.75 pr-19.25 border border-black/16 rounded-lg">
+                        <div key={idx} className="py-5 translate-all duration-300 cursor-pointer pl-18.75 pr-19.25 border border-black/16 rounded-lg">
                             <div className="max-w-53 w-full">
                                 <div className="w-14 h-14 bg-orange-200 rounded-full mx-auto flex justify-center item-center">
                                     <img width={24} height={24}
