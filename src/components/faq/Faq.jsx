@@ -49,7 +49,7 @@ const Faq = () => {
 
   return (
     <>
-      <section className="py-16">
+      <section className="pb-16">
         <div className="mx-auto px-5 w-full max-w-295">
           <div className="flex items-center justify-center w-full flex-col gap-16">
             <div className="text-center">
@@ -132,9 +132,9 @@ const Faq = () => {
         </div>
 
         <div className="mx-auto px-5 w-full max-w-295">
-          <div className="mt-30 flex items-center justify-center bg-sandy-orange w-full py-16 rounded-lg flex-col">
+          <div className="mt-30 flex items-center justify-center bg-sandy-orange w-full py-16 rounded-xl flex-col">
 <div className="flex items-center justify-center flex-col">
-  <h2 className="font-semibold text-5xl text-white leading-119 max-w-158 mb-4 text-center">
+  <h2 className="font-semibold text-5xl font-rubik text-white leading-119 max-w-158 mb-4 text-center">
 Need Help in Your Visa? Ask Herbert Now!
   </h2>
   <p className="font-lato text-white text-center text-base leading-150 max-w-[528px]">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>

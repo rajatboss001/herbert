@@ -11,8 +11,8 @@ const Home = () => {
       <Homepage />
       <Swiper />
       <Features />
-      <Resource />
       <Plan />
+      <Resource />
       <Faq />
     </div>
   );

@@ -14,10 +14,10 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/swiper" element={<Swiper />} />
         <Route path="features" element={<Features />} />
+        <Route path="/plan" element={<Plan />} />
         <Route path="/resource" element={<Resource />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/source" element={<Source />} />
-        <Route path="/plan" element={<Plan />} />
       </Routes>
     </BrowserRouter>
   );
