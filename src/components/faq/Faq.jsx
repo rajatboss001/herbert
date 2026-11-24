@@ -137,7 +137,7 @@ const Faq = () => {
   <h2 className="font-semibold text-5xl font-rubik text-white leading-119 max-w-158 mb-4 text-center">
 Need Help in Your Visa? Ask Herbert Now!
   </h2>
-  <p className="font-lato text-white text-center text-base leading-150 max-w-[528px]">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
+  <p className="font-lato text-white text-center text-base leading-150 max-w-132">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
 
 <div className="flex items-center justify-center gap-4 mt-10.5">
 <button className="group relative cursor-pointer overflow-hidden flex items-center justify-center px-6 py-3.5 bg-white border border-white rounded-lg">
