@@ -1,10 +1,10 @@
-import Homepage from "../components/home/Homepage"
-import Swiper from "../components/swiper/Swiper"
-import Resource from "../components/resource/Resource"
-import Faq from "../components/faq/Faq"
-import Features from "../components/features/Features"
-import Footer from "../components/footer/Footer"
-import Plan from "../components/pricing plan/Plan"
+import Homepage from "../components/mainsection/Homepage";
+import Swiper from "../components/mainsection/Swiper";
+import Resource from "../components/mainsection/Resource";
+import Faq from "../components/mainsection/Faq";
+import Features from "../components/mainsection/Features";
+import Plan from "../components/mainsection/Plan";
+import Footer from "../components/common/Footer"
 
 const Home = () => {
   return (
@@ -17,7 +17,7 @@ const Home = () => {
       <Faq />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

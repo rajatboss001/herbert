@@ -4,7 +4,7 @@ import { FEATURES, FEATURES_DATA } from "../../utils/helper";
 const Features = () => {
   return (
     <section>
-      <div className="features-container max-w-295 px-5 mx-auto pb-30 pt-29.5">
+      <div className="features-container max-w-297 px-6 mx-auto pb-30 pt-29.5">
 
         {/* Heading */}
         <div className="mx-auto">

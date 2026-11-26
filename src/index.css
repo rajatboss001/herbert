@@ -16,6 +16,7 @@
   --color-rich-black: #010101;
   --color-orange-red: #ff4c24;
   --color-sandy-orange: #ff9748;
+  --color-lite-orange: #FFF8F2;
   --color-warm-ivory: #FFF8F2;
 
   /* Custom Text Sizes */
@@ -36,5 +37,4 @@
   --leading-120: 120%;
   --leading-134: 134%;
   --leading-150: 150%;
-
 }

@@ -5,7 +5,7 @@ const Resource = () => {
   return (
     <>
       <section className="pt-35.25 pb-31.25">
-        <div className="mx-auto max-xl:px-5 max-w-360 w-full">
+        <div className="mx-auto max-xl:px-6 max-w-360 w-full">
           <div className="flex items-center justify-between gap-10 ml-auto w-full max-w-322.5 flex-wrap max-lg:justify-start">
             <div className="flex flex-col">
               <div className=" flex flex-col max-w-118.25 mb-10.5 max-lg:max-w-full">
@@ -43,13 +43,19 @@ const Resource = () => {
             <div className="flex max-sm:hidden">
               <img
                 width={701}
-                height={602} className="max-md:max-w-150"
+                height={602}
+                className="max-md:max-w-150"
                 src={resource_img_big}
                 alt="RESOURCE_IMAGE_ONE"
               />
             </div>
-            <div className="max-md:sm flex">
-              <img height={305} width={261} src={Change_Img} alt="RESPONSIVE_CHANGED_IMAGE" />
+            <div className="max-sm:flex hidden">
+              <img
+                height={305}
+                width={261}
+                src={Change_Img}
+                alt="RESPONSIVE_CHANGED_IMAGE"
+              />
             </div>
           </div>
         </div>

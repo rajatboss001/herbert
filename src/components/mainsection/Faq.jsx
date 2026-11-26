@@ -1,6 +1,7 @@
 import Minus from "../../assets/images/svg/minus.svg";
 import Plus from "../../assets/images/svg/plus.svg";
 import { useState } from "react";
+import  FaqBg from "../../assets/images/png/faq-bg.png"
 
 const Faq = () => {
   const faqs = [
@@ -49,8 +50,8 @@ const Faq = () => {
 
   return (
     <>
-      <section className="pt-16">
-        <div className="mx-auto px-5 w-full max-w-295">
+      <section  style={{ backgroundImage: `url(${FaqBg})` }} className="pt-16  mb-[-134px] z-99 relative bg-center bg-cover">
+        <div className="mx-auto px-6 w-full max-w-297">
           <div className="flex items-center justify-center w-full flex-col gap-16">
             <div className="text-center">
               <h2 className="mb-4 font-semibold text-5xl text-rich-black leading-119">
@@ -129,13 +130,13 @@ const Faq = () => {
           </div>
         </div>
 
-        <div className="mx-auto px-5 w-full max-w-295">
-          <div className="mt-30 flex items-center justify-center bg-sandy-orange w-full py-16 rounded-lg flex-col -mb-33.5 relative">
-            <div className="flex items-center justify-center flex-col">
-              <h2 className="font-semibold text-5xl text-white leading-119 max-w-158 mb-4 text-center">
-                Need Help in Your Visa? Ask Herbert Now!
-              </h2>
-              <p className="font-lato text-white text-center text-base leading-150 max-w-[528px]">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
+        <div className="mx-auto px-6 w-full max-w-297">
+          <div className="mt-30 flex items-center justify-center bg-sandy-orange w-full py-16 rounded-xl flex-col">
+<div className="flex items-center justify-center flex-col">
+  <h2 className="font-semibold text-5xl font-rubik text-white leading-119 max-w-158 mb-4 text-center">
+Need Help in Your Visa? Ask Herbert Now!
+  </h2>
+  <p className="font-lato text-white text-center text-base leading-150 max-w-132">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
 
               <div className="flex items-center justify-center gap-4 mt-10.5">
                 <button className="group relative cursor-pointer overflow-hidden flex items-center justify-center px-6 py-3.5 bg-white border border-white rounded-lg">
