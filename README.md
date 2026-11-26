@@ -1,16 +1,34 @@
-# React + Vite
+# Herbert
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## links
+1. Live link:- https://herbert-mu.vercel.app/
+2. Repo link:- https://github.com/rajatboss001/herbert.git
+3. Figma link :- https://www.figma.com/design/pPQiLzwnus2s8Q8ZeSLIzy/Herbert--Copy---Copy---Copy-?node-id=162-244&t=2aOdYxnjkNcUBACC-0
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Herbert is a responsive German immigration and visa guidance website inspired by the supplied Figma design. It helps visitors explore visa topics, understand document and interview preparation, review common immigration regulations, and navigate to relevant German and European information sources.
 
-## React Compiler
+The website includes a landing page with Herbert's main guidance areas, pricing-plan previews, an FAQ, and a dedicated sources page covering the German Residence Act, Schengen Borders Code, Employment Regulation, Visa Code, and Visa Handbook.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- JavaScript (JSX)
+- Tailwind CSS
+- React Router
+- GSAP
+- SweetAlert2
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Responsive desktop, tablet, and mobile layouts
+- German visa and immigration guidance overview
+- Visa option, interview, and document checklist preparation topics
+- German language and CV/motivational-letter assistance information
+- Residence Act, Schengen, employment, visa code, and visa handbook resources
+- Friendly pricing-plan cards
+- Expandable FAQ section
+- Mobile navigation menu
+- Custom 404 page

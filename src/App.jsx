@@ -1,24 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Features from "./components/features/Features";
-import Resource from "./components/resource/Resource";
-import Swiper from "./components/swiper/Swiper";
-import Faq from "./components/faq/Faq";
-import Plan from "./components/pricingplan/Plan";
-import Source from "./pages/Source";
-import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Home from "./pages/Home"
+import Source from "./pages/Source"
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/swiper" element={<Swiper />} />
-        <Route path="features" element={<Features />} />
-        <Route path="/plan" element={<Plan />} />
-        <Route path="/resource" element={<Resource />} />
-        <Route path="/faq" element={<Faq />} />
-        <Route path="/source" element={<Source />} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/source" element={<Source />} />
+    </Routes>
     </BrowserRouter>
   );
 };

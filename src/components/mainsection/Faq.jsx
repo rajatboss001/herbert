@@ -1,6 +1,7 @@
 import Minus from "../../assets/images/svg/minus.svg";
 import Plus from "../../assets/images/svg/plus.svg";
 import { useState } from "react";
+import  FaqBg from "../../assets/images/png/faq-bg.png"
 
 const Faq = () => {
   const faqs = [
@@ -49,8 +50,8 @@ const Faq = () => {
 
   return (
     <>
-      <section className="pb-16">
-        <div className="mx-auto px-5 w-full max-w-295">
+      <section  style={{ backgroundImage: `url(${FaqBg})` }} className="pt-16  mb-[-134px] z-99 relative bg-center bg-cover">
+        <div className="mx-auto px-6 w-full max-w-297">
           <div className="flex items-center justify-center w-full flex-col gap-16">
             <div className="text-center">
               <h2 className="mb-4 font-semibold text-5xl text-rich-black leading-119">
@@ -73,11 +74,10 @@ const Faq = () => {
                   return (
                     <div
                       key={index}
-                      className={`border rounded-md px-6 py-[17.5px] box-border transition-all duration-300 ease-in-out ${
-                        isOpen
+                      className={`border rounded-md px-6 py-[17.5px] box-border transition-all duration-300 ease-in-out ${isOpen
                           ? "border-transparent shadow-[0px_0px_16px_6px_#8080801F]"
                           : "border-black/16 shadow-none"
-                      }`}
+                        }`}
                     >
                       <button
                         type="button"
@@ -101,11 +101,10 @@ const Faq = () => {
                       </button>
 
                       <div
-                        className={`grid transition-all duration-300 ease-in ${
-                          isOpen
+                        className={`grid transition-all duration-300 ease-in ${isOpen
                             ? "grid-rows-[1fr] opacity-100"
                             : "grid-rows-[0fr] opacity-0"
-                        }`}
+                          }`}
                       >
                         <div className="overflow-hidden">
                           <p className="font-lato text-base font-normal text-charcoal mt-3 leading-150">
@@ -131,7 +130,7 @@ const Faq = () => {
           </div>
         </div>
 
-        <div className="mx-auto px-5 w-full max-w-295">
+        <div className="mx-auto px-6 w-full max-w-297">
           <div className="mt-30 flex items-center justify-center bg-sandy-orange w-full py-16 rounded-xl flex-col">
 <div className="flex items-center justify-center flex-col">
   <h2 className="font-semibold text-5xl font-rubik text-white leading-119 max-w-158 mb-4 text-center">
@@ -139,12 +138,12 @@ Need Help in Your Visa? Ask Herbert Now!
   </h2>
   <p className="font-lato text-white text-center text-base leading-150 max-w-132">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
 
-<div className="flex items-center justify-center gap-4 mt-10.5">
-<button className="group relative cursor-pointer overflow-hidden flex items-center justify-center px-6 py-3.5 bg-white border border-white rounded-lg">
+              <div className="flex items-center justify-center gap-4 mt-10.5">
+                <button className="group relative cursor-pointer overflow-hidden flex items-center justify-center px-6 py-3.5 bg-white border border-white rounded-lg">
                   <span className="absolute inset-0 z-0 bg-sandy-orange translate-x-[110%] group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></span>
 
                   <span className="font-rubik relative z-10 font-semibold text-sandy-orange text-base leading-117 group-hover:text-white transition-all duration-300 ease-in">
-                   Start your conversation
+                    Start your conversation
                   </span>
                 </button>
 
@@ -155,9 +154,9 @@ Need Help in Your Visa? Ask Herbert Now!
                     Learn More
                   </span>
                 </button>
-</div>
+              </div>
 
-</div>
+            </div>
           </div>
         </div>
       </section>

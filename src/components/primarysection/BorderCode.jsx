@@ -4,7 +4,7 @@ const BorderCode = () => {
   return (
     <>
       <section className="bg-lite-orange py-18 w-full">
-        <div className="max-w-360 w-full mx-auto">
+        <div className="max-w-360 w-full mx-auto px-6">
           <div className="flex items-center justify-between gap-8 mr-auto max-w-322.5 w-full">
             <div className="flex">
               <img

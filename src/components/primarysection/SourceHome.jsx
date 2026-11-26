@@ -4,7 +4,7 @@ const SourceHome = () => {
   return (
     <>
       <section className="pt-18 mb-30">
-        <div className="mx-auto px-5 max-w-295">
+        <div className="mx-auto px-6 max-w-297">
           <div className="flex items-center justify-center flex-col mb-30">
             <div className="flex flex-col items-center justify-center">
               <h1 className=" mb-4 text-center text-custom-5xl font-rubik text-rich-black font-semibold leading-118 max-md:text-custom-2xl max-w-201.75">

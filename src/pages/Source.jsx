@@ -1,6 +1,6 @@
-import BorderCode from "../components/bcode/BorderCode";
 import Navbar from "../components/common/Navbar"
-import SourceHome from "../components/sourcehome/SourceHome";
+import SourceHome from "../components/primarysection/SourceHome";
+import BorderCode from "../components/primarysection/BorderCode";
 
 const Source = () => {
   return (
