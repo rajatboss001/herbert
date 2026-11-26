@@ -5,7 +5,7 @@ import Swiper from "./components/swiper/Swiper"
 import Faq from "./components/faq/Faq"
 import Source from "./pages/Source"
 import Home from "./pages/Home"
-
+gi
 const App = () => {
   return (
     <BrowserRouter>
