@@ -6,11 +6,11 @@ import bgIimage from "../../assets/images/webp/Hero_bg.webp";
 
 const Homepage = () => {
   return (
-    <section style={{ backgroundImage: `url(${bgIimage})` }} className="bg-cover bg-center pt-28 max-lg:pt-20">
+    <section style={{ backgroundImage: `url(${bgIimage})` }} className="bg-cover bg-center">
       <Navbar />
 
       <div>
-        <div className="hero-container max-w-334.25 mx-auto">
+        <div className="hero-container max-w-334.25 mx-auto pt-28 max-lg:pt-20">
           <div className="hero-row flex mr-5.25 gap-y-18.5 max-xl:flex-col-reverse max-xl:items-center max-xl:mr-0">
 
             {/* LEFT IMAGE */}
